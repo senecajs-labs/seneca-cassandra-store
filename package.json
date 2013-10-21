@@ -1,0 +1,33 @@
+{
+  "name": "seneca-cassandra-store",
+  "version": "0.0.1",
+  "description": "Cassandra data store plugin for Seneca",
+  "main": "lib/cassandra-store.js",
+  "author": "Mircea Alexandru",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mirceaalexandru/seneca-cassandra-store.git"
+  },
+  "keywords": [
+    "seneca",
+    "plugin",
+    "cassandra",
+    "store"
+  ],
+  "scripts": {
+  },
+  "dependencies": {
+    "seneca": "0.5.x",
+    "pg": "0.8.x",
+    "underscore": "1.4.x",
+    "async": "0.1.x",
+    "node-uuid": "1.4.x",
+    "cassandra-client": "0.14.7"
+  },
+  "devDependencies": {
+    "mocha": "1.9.x",
+    "chai": "1.5.x"
+  }
+}
