@@ -3,6 +3,8 @@ seneca-cassandra
 
 seneca-cassandra is a [Cassandra][cassandra] database plugin for the [Seneca][seneca] MVP toolkit.
 
+Status: Under development
+
 Usage:
 
     var seneca = require('seneca');
