@@ -1,7 +1,7 @@
 seneca-cassandra
 ================
 
-seneca-cassandra is a [Cassandra] database plugin for the [Seneca][seneca] MVP toolkit.
+seneca-cassandra is a [Cassandra][cassandra] database plugin for the [Seneca][seneca] MVP toolkit.
 
 Usage:
 
