@@ -47,7 +47,7 @@ For creating test environments please run following commands using cassandra-cli
       and column_metadata =
     [
       {column_name : p1,validation_class : UTF8Type},
-      {column_name : p2,validation_class : UTF8Type}
+      {column_name : p2,validation_class : UTF8Type, index_type : 0, index_name : p2_idx}
     ];
 
     create column family moon_bar
@@ -62,6 +62,6 @@ For creating test environments please run following commands using cassandra-cli
       {column_name : wen, validation_class : UTF8Type},
       {column_name : arr, validation_class : UTF8Type},
       {column_name : obj, validation_class : UTF8Type},
-      {column_name : mark,validation_class : UTF8Type},
+      {column_name : mark,validation_class : UTF8Type, index_type : 0, index_name : mark_idx},
       {column_name : seneca,validation_class : UTF8Type}
     ];
