@@ -26,6 +26,7 @@ Usage:
     ...
 
 [seneca]: http://senecajs.org/
+[cassandra]: http://cassandra.apache.org/
 
 
 Testing
