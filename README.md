@@ -1,7 +1,7 @@
-seneca-cassandra
+seneca-cassandra-store
 ================
 
-seneca-cassandra is a [Cassandra][cassandra] database plugin for the [Seneca][seneca] MVP toolkit.
+seneca-cassandra-store is a [Cassandra][cassandra] database plugin for the [Seneca][seneca] MVP toolkit.
 
 ### Usage
 
