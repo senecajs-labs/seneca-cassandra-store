@@ -1,7 +1,7 @@
 seneca-cassandra-store
 ================
 
-seneca-cassandra-store is a [Cassandra][cassandra] database plugin for the [Seneca][seneca] MVP toolkit.
+seneca-cassandra-store is a [Cassandra][cassandra] database plugin for the [Seneca][seneca] MVP toolkit. It uses the [Cassandra Client][cassandra-client] CQL driver.
 
 ### Usage
 
@@ -33,6 +33,7 @@ si.ready(function() {
 
 [seneca]: http://senecajs.org/
 [cassandra]: http://cassandra.apache.org/
+[cassandra-client]: https://github.com/racker/node-cassandra-client
 
 ## Install
 
@@ -52,7 +53,7 @@ The standard Seneca query format is supported:
 
 ### Native Driver
 
-As with all seneca stores, you can access the native driver, in this case, the `node-cassandra-native` `collection` object using `entity.native$(function(err,collection){...})`.
+As with all seneca stores, you can access the native driver, in this case, the `cassandra-client` object using `entity.native$(function(err,collection){...})`.
 
 
 Testing
