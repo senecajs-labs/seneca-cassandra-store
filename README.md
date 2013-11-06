@@ -3,32 +3,56 @@ seneca-cassandra
 
 seneca-cassandra is a [Cassandra][cassandra] database plugin for the [Seneca][seneca] MVP toolkit.
 
-Status: Under development
+### Usage
 
-Usage:
+```JavaScript
+var seneca = require('seneca');
+var store = require('cassandra-store');
 
-    var seneca = require('seneca');
-    var store = require('cassandra-store');
+var config = {}
+var storeopts = {
+  name: 'senecatest',
+  host: '127.0.0.1',
+  port: 9160
+};
 
-    var config = {}
-    var storeopts = {
-      name: 'senecatest',
-      host: '127.0.0.1',
-      port: 9160
-    };
+var si = seneca(config)
+si.use(store, storeopts)
 
-    ...
+si.ready(function() {
+  var entity = seneca.make$('typename')
+  entity.someproperty = "something"
+  entity.anotherproperty = 100
 
-    var si = seneca(config)
-    si.use(store, storeopts)
-    si.ready(function() {
-      var product = si.make('product')
-      ...
-    })
-    ...
+  entity.save$( function(err,entity){ ... } )
+  entity.load$( {id: ...}, function(err,entity){ ... } )
+  entity.list$( {property: ...}, function(err,entity){ ... } )
+  entity.remove$( {id: ...}, function(err,entity){ ... } )
+})
+```
 
 [seneca]: http://senecajs.org/
 [cassandra]: http://cassandra.apache.org/
+
+## Install
+
+```sh
+npm install seneca
+npm install seneca-cassandra-store
+```
+
+### Queries
+
+The standard Seneca query format is supported:
+
+   * `entity.list$({field1:value1, field2:value2, ...})` implies pseudo-query `field1==value1 AND field2==value2, ...`
+   * `entity.list$({f1:v1,...},{limit$:10})` means only return 10 results
+   * due to cassandra restrictions you cannot use sort$, skip$ and fields$. These are not available for this storage.
+
+
+### Native Driver
+
+As with all seneca stores, you can access the native driver, in this case, the `node-cassandra-native` `collection` object using `entity.native$(function(err,collection){...})`.
 
 
 Testing
