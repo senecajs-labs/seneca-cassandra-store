@@ -90,3 +90,9 @@ For creating test environments please run following commands using cassandra-cli
       {column_name : mark,validation_class : UTF8Type, index_type : 0, index_name : mark_idx},
       {column_name : seneca,validation_class : UTF8Type}
     ];
+
+
+Acknowledgements
+----------------
+
+This project was sponsored by [nearForm](http://nearform.com).
