@@ -1,5 +1,3 @@
-/* jslint node: true*/
-/* jslint asi: true */
 /*global describe:true, it:true*/
 'use strict'
 

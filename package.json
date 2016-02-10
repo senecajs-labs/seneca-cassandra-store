@@ -22,19 +22,20 @@
   "scripts": {
   },
   "dependencies": {
-    "seneca": "0.5.x",
-    "underscore": "1.4.x",
+    "seneca": "plugin",
+    "lodash": "4.x.x",
     "node-uuid": "1.4.x",
-    "cassandra-client": "0.14.7"
+    "cassandra-client": "0.15.2"
   },
   "devDependencies": {
     "eslint-config-seneca": "1.x.x",
     "eslint-plugin-standard": "1.x.x",
     "eslint-plugin-hapi": "4.x.x",
-    "mocha": "1.9.x",
-    "chai": "1.5.x",
-    "async":"0.2.9",
+    "mocha": "2.4.5",
+    "chai": "3.5.0",
+    "async":"1.5.2",
     "eyes":"0.1.8"
   }
 }
+
 
