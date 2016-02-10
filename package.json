@@ -4,6 +4,9 @@
   "description": "Cassandra data store plugin for Seneca",
   "main": "lib/cassandra-store.js",
   "author": "Mircea Alexandru",
+  "contributors": [
+    "Isaac Mahon https://github.com/CodeWriterWriter"
+  ],
   "license": "MIT",
   "readmeFilename": "README.md",
   "repository": {
@@ -34,3 +37,4 @@
     "eyes":"0.1.8"
   }
 }
+
