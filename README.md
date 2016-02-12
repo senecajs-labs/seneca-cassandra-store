@@ -1,9 +1,21 @@
+![Seneca](http://senecajs.org/files/assets/seneca-logo.png)
 seneca-cassandra-store
 ================
+[![npm version][npm-badge]][npm-url]
+[![Build Status][travis-badge]][travis-url]
+[![Dependency Status][david-badge]][david-url]
+[![Gitter chat][gitter-badge]][gitter-url]
 
 seneca-cassandra-store is a [Cassandra][cassandra] database plugin for the [Seneca][seneca] MVP toolkit. It uses the [Cassandra Client][cassandra-client] CQL driver.
 
-### Usage
+## Install
+
+```sh
+npm install seneca
+npm install seneca-cassandra-store
+```
+
+### Using seneca-cassandra-store
 
 ```JavaScript
 var seneca = require('seneca');
@@ -16,10 +28,10 @@ var storeopts = {
   port: 9160
 };
 
-var si = seneca(config)
-si.use(store, storeopts)
+var Si = seneca(config)
+Si.use(store, storeopts)
 
-si.ready(function() {
+Si.ready(function() {
   var entity = seneca.make$('typename')
   entity.someproperty = "something"
   entity.anotherproperty = 100
@@ -35,12 +47,6 @@ si.ready(function() {
 [cassandra]: http://cassandra.apache.org/
 [cassandra-client]: https://github.com/racker/node-cassandra-client
 
-## Install
-
-```sh
-npm install seneca
-npm install seneca-cassandra-store
-```
 
 ### Queries
 
@@ -96,3 +102,20 @@ Acknowledgements
 ----------------
 
 This project was sponsored by [nearForm](http://nearform.com).
+
+## Contributing
+The [Senecajs org](https://github.com/senecajs/) encourage open participation. If you feel you can help in any way, be it with
+documentation, examples, extra testing, or new features please get in touch.
+
+## License
+Copyright Mircea Alexandru and other contributors 2016, Licensed under [MIT][].
+[npm-badge]: https://badge.fury.io/js/seneca-cassandra-store.svg
+[npm-url]: https://badge.fury.io/js/seneca-cassandra-store
+[david-badge]: https://david-dm.org/senecajs/seneca-cassandra-store.svg
+[david-url]: https://david-dm.org/senecajs/seneca-cassandra-store
+[gitter-badge]: https://badges.gitter.im/senecajs/seneca.png
+[gitter-url]: https://gitter.im/senecajs/seneca
+[travis-badge]: https://travis-ci.org/senecajs/seneca-cassandra-store.svg
+[travis-url]: https://travis-ci.org/senecajs/seneca-cassandra-store
+[MIT]: ./LICENSE
+
