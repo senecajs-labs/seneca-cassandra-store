@@ -5,7 +5,7 @@
   "main": "lib/cassandra-store.js",
   "author": "Mircea Alexandru",
   "contributors": [
-    "Isaac Mahon https://github.com/CodeWriterWriter"
+    "Jane Quinn  https://github.com/CodeWriterWriter"
   ],
   "license": "MIT",
   "readmeFilename": "README.md",
