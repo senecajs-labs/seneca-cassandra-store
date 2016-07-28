@@ -2,7 +2,6 @@
 seneca-cassandra-store
 ================
 [![npm version][npm-badge]][npm-url]
-[![Build Status][travis-badge]][travis-url]
 [![Dependency Status][david-badge]][david-url]
 [![Gitter chat][gitter-badge]][gitter-url]
 
@@ -111,11 +110,9 @@ documentation, examples, extra testing, or new features please get in touch.
 Copyright Mircea Alexandru and other contributors 2016, Licensed under [MIT][].
 [npm-badge]: https://badge.fury.io/js/seneca-cassandra-store.svg
 [npm-url]: https://badge.fury.io/js/seneca-cassandra-store
-[david-badge]: https://david-dm.org/senecajs/seneca-cassandra-store.svg
-[david-url]: https://david-dm.org/senecajs/seneca-cassandra-store
+[david-badge]: https://david-dm.org/senecajs-labs/seneca-cassandra-store.svg
+[david-url]: https://david-dm.org/senecajs-labs/seneca-cassandra-store
 [gitter-badge]: https://badges.gitter.im/senecajs/seneca.png
 [gitter-url]: https://gitter.im/senecajs/seneca
-[travis-badge]: https://travis-ci.org/senecajs/seneca-cassandra-store.svg
-[travis-url]: https://travis-ci.org/senecajs/seneca-cassandra-store
 [MIT]: ./LICENSE
 
