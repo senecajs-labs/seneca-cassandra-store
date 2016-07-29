@@ -114,5 +114,5 @@ Copyright Mircea Alexandru and other contributors 2016, Licensed under [MIT][].
 [david-url]: https://david-dm.org/senecajs-labs/seneca-cassandra-store
 [gitter-badge]: https://badges.gitter.im/senecajs/seneca.png
 [gitter-url]: https://gitter.im/senecajs/seneca
-[MIT]: ./LICENSE
+[MIT]: ./LICENSE.txt
 
